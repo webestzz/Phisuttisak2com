@@ -1,0 +1,66 @@
+body {
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    background-image: url('https://i.pinimg.com/originals/77/d8/eb/77d8ebe7480ec98bc6e430690adfb266.gif'); /* เปลี่ยนเป็น path ของภาพ GIF ของคุณ */
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: Arial, sans-serif;
+    color: #fff;
+}
+
+.login-container {
+    background-color: rgba(0, 0, 0, 0.7); /* สีพื้นหลังที่ครอบคลุม */
+    padding: 20px;
+    border-radius: 8px;
+    max-width: 400px;
+    width: 100%;
+    box-sizing: border-box; /* ทำให้ padding และ border ไม่ส่งผลต่อขนาดของกล่อง */
+    text-align: center;
+}
+
+h1 {
+    margin-bottom: 20px;
+    font-size: 24px;
+}
+
+label {
+    display: block;
+    margin: 10px 0 5px;
+    font-size: 16px;
+}
+
+input {
+    width: calc(100% - 20px); /* ทำให้กล่องใส่ข้อมูลมีความกว้างเต็มที่โดยมี padding */
+    padding: 10px;
+    margin-bottom: 15px;
+    border: none;
+    border-radius: 4px;
+    box-sizing: border-box; /* ทำให้ padding และ border ไม่ส่งผลต่อขนาดของกล่อง input */
+    font-size: 16px;
+}
+
+button {
+    width: calc(100% - 20px); /* ทำให้ปุ่มมีความกว้างเต็มที่โดยมี padding */
+    padding: 10px;
+    background-color: #007bff;
+    border: none;
+    border-radius: 4px;
+    color: #fff;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    box-sizing: border-box; /* ทำให้ padding และ border ไม่ส่งผลต่อขนาดของปุ่ม */
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+#error-message {
+    color: #ff0000;
+    margin-top: 10px;
+}
